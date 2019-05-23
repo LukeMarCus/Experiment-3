@@ -1,0 +1,74 @@
+#include<iostream>	
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	char letter[30];
+	int index;
+	int n;
+
+	cout << "--------------------------" << endl;
+	cout << "This program shows the reversed arrangement \nof that letters has been inputted." << endl;
+	cout << "--------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "Insert the number of letters you want to process: ";
+	cin >> n;
+
+	cout << endl; 
+
+	for (index = 0; index < n; index++)
+	{
+		if (index == 0)
+		{
+			cout << "Insert the first letter: ";
+			cin >> letter[index];
+		}
+
+		else if (index == (n-1))
+		{
+			cout << "Insert the last letter: ";
+			cin >> letter[index];
+		}
+
+		else if (index > 0 && index < n)
+		{
+			cout << "Insert the next letter: ";
+			cin >> letter[index];
+		}
+	}
+
+	cout << endl << endl;
+
+	cout << "--------------------------" << endl;
+
+	cout << "Before the process: ";
+
+		for (index = 0; index < n; index++)
+		{
+			cout << letter[index] << " ";
+		}
+
+	cout << endl;
+
+	cout << "After the process: ";
+
+	for (index = (n-1); index >= 0; index--)
+	{
+		cout << letter[index] << " ";
+	}
+
+	cout << endl;
+
+	cout << "--------------------------" << endl;
+
+	cout << endl << endl;
+
+	cout << "The array size is: " << n << "." << endl;
+	
+	_getch();
+	return 0;
+}
