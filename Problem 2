@@ -1,0 +1,112 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+
+	double tempA[7];
+	double tempB[7];
+	double tempC[7];
+	int index;
+
+	cout << "-------------------------------------" << endl;
+	cout << "Today you are going to provide \nthe temparatures for three \ndifferent provinces in a week in degrees Celcius." << endl;
+	cout << "-------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "-------------------------------------" << endl;
+	cout << "Lets start for province A." << endl;
+	cout << "-------------------------------------" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+		{
+			cout << "Day " << index + 1 << ": ";
+			cin >> tempA[index];
+
+			cout << endl;
+		}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "-------------------------------------" << endl;
+	cout << "Lets proceed to province B." << endl;
+	cout << "-------------------------------------" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": ";
+		cin >> tempB[index];
+		
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "-------------------------------------" << endl;
+	cout << "Finally the province C." << endl;
+	cout << "-------------------------------------" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": ";
+		cin >> tempC[index];
+
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "-------------------------------------" << endl;
+	cout << "These is the summary of your input." << endl;
+	cout << "-------------------------------------" << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province A." << endl;
+	
+	for (index = 0; index < 7; index++)
+		{
+			cout << "Day " << index + 1 << ": " << tempA[index];
+			cout << endl;
+		}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province B." << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": " << tempB[index];
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province C." << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": " << tempC[index];
+		cout << endl;
+	}
+
+
+	_getch();
+	return 0;
+}
